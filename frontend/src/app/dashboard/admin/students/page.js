@@ -295,7 +295,7 @@ export default function StudentsManagement() {
   const [loading, setLoading] = useState(true);
 
   // Generate academic years (you can modify this as needed)
-  const academicYears = ["2023-2024", "2024-2025", "2025-2026", "2026-2027"];
+  const academicYears = ["2023", "2024", "2025", "2026"];
 
   // Fetch classes and parents for dropdowns
   useEffect(() => {
