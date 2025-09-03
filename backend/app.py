@@ -329,7 +329,7 @@ def principal_attendance():
         if result:
             return jsonify({"success": True, "attendance_records": result}), 200
         else:
-            return jsonify({"success": False, "message": "No data available"}), 404
+            return jsonify({"success": True, "attendance_records": []}), 200
     except Exception as e:
         return jsonify({"success": False, "message": str(e)}), 500
 
